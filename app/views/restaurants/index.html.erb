@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h1>Welcome to Jonatas' restaurants 👨🏽‍🍳🍜🍤<</h1>
+
+<div class="container">
+
+     <% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant_path(restaurant) do %>
+      <h2><%= restaurant.name %></h2>
+    <% end %>
+  <% end %>
+
+
+</div>
+
+  <hr>
+
+  <%= link_to new_restaurant_path do %>
+    <i class="fa-solid fa-plus"></i> Add a new restaurant
+  <% end %>
+</div>
